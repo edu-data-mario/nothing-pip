@@ -1,6 +1,6 @@
 [project]
 name = "nothing_pip"
-version = "0.2.0"
+version = "0.3.0"
 description = "Let's share a program made with Python with mankind. It's nothing. It's easy."
 authors = [
     {name = "dmario24", email = "data.mario24@gmail.com"},
