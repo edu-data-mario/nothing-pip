@@ -1,93 +1,41 @@
-# example-package
+# nothing-pip
+- 누구나 python 으로 제작한 프로그램을 누구에게나 사용하도록 배포 할 수 있습니다.
+- 아무것도 아닙니다.
 
-### bigbang
+### Start
+- A. [packaging-projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)에 모든 방법이 정리되어 있습니다. 이 문서는 이를 요약합니다.
+- B. [https://pdm.fming.dev](https://pdm.fming.dev/latest/#introduction) 에 따라 pdp 를 처리하고 초기 프로젝트를 만들어 봅니다.
+- C. https://github.com/edu-data-mario/nothing-pip/releases/tag/0.1.0 에서 (B) 수행 결과 확인이 가능합니다.
+
+### Nothing
+- 한줄의 명령어로 누구나 사용 가능한 python 프로그램이 배포 되었습니다.
 ```bash
-$ pwd
-/Users/m2/code/pd24
-$ mkdir edu-pd24
-$ cd edu-pd24
-$ pdm init
-Creating a pyproject.toml for PDM...
-Please enter the Python interpreter to use
-0. /Users/m2/.pyenv/shims/python3 (3.9)
-1. /Users/m2/.pyenv/shims/python (3.9)
-2. /Users/m2/.pyenv/shims/python3.11 (3.11)
-3. /opt/homebrew/bin/python3.11 (3.11)
-4. /Users/m2/.pyenv/versions/3.11.0/bin/python3.11 (3.11)
-5. /Users/m2/.pyenv/shims/python3.10 (3.10)
-6. /opt/homebrew/bin/python3.10 (3.10)
-7. /Users/m2/.pyenv/versions/3.10.5/bin/python3.10 (3.10)
-8. /Users/m2/.pyenv/versions/3.9.17/bin/python3.9 (3.9)
-9. /Users/m2/.pyenv/shims/python3.9 (3.9)
-10. /Users/m2/.pyenv/versions/3.9.16/bin/python3.9 (3.9)
-11. /Users/m2/.pyenv/versions/miniforge3-4.10.3-10/bin/python3.9 (3.9)
- 1 .gitignore +                                                                                                                                  X
-12. /Users/m2/.pyenv/versions/3.9.13/bin/python3.9 (3.9)
-13. /usr/bin/python3 (3.9)
-14. /Users/m2/.pyenv/versions/3.9.2/bin/python3.9 (3.9)
-15. /Users/m2/.pyenv/versions/3.8.17/bin/python3.8 (3.8)
-16. /Users/m2/.pyenv/versions/3.7.17/bin/python3.7m (3.7)
-17. /Users/m2/.pyenv/versions/3.7.17/bin/python3.7 (3.7)
-18. /Users/m2/.pyenv/versions/3.7.13/bin/python3.7m (3.7)
-19. /Users/m2/.pyenv/versions/3.7.13/bin/python3.7 (3.7)
-20. /Users/m2/.pyenv/versions/3.6.15/bin/python3.6m (3.6)
-21. /Users/m2/.pyenv/versions/3.6.15/bin/python3.6 (3.6)
-22. /Users/m2/Library/Application Support/pdm/venv/bin/python (3.9)
-Please select (0):
-Would you like to create a virtualenv with /Users/m2/.pyenv/versions/3.9.17/bin/python3? [y/n] (y):
-Virtualenv is created successfully at /Users/m2/code/pd24/edu-pd24/.venv
-Is the project a library that is installable?
-If yes, we will need to ask a few more questions to include the project name and build backend [y/n] (n):
-License(SPDX name) (MIT):
-Author name (dmario24):
-Author email (becky2sawyer@gmail.com): data.mario24@gmail.com
-Python requires('*' to allow any) (>=3.9):
-Project is initialized successfully
-$ tree
-.
-├── README.md
-├── __pycache__
-│   └── __init__.cpython-39.pyc
-├── pyproject.toml
-├── src
-│   └── example_package
-│       ├── __init__.py
-│       └── __pycache__
-│           └── __init__.cpython-39.pyc
-└── tests
-    ├── __init__.py
-    └── __pycache__
-        └── __init__.cpython-39.pyc
+$ pdm publish
+Building sdist...
+Built sdist at /Users/m2/code/pd24/nothing-pip/dist/nothing_pip-0.2.0.tar.gz
+Building wheel...
+Built wheel at /Users/m2/code/pd24/nothing-pip/dist/nothing_pip-0.2.0-py3-none-any.whl
+Username: dmario24 
+Password: 
+Uploading nothing_pip-0.2.0-py3-none-any.whl
+Uploading nothing_pip-0.2.0.tar.gz
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 kB • 00:00 • ?
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 kB • 00:00 • ?
 
-6 directories, 7 files
-$ vi .gitignore
-$ git init
-/Users/m2/code/pd24/edu-pd24/.git/ 안의 빈 깃 저장소를 다시 초기화했습니다
-$ git status
-현재 브랜치 main
+View at:
+https://pypi.org/project/nothing_pip/0.2.0/
+https://pypi.org/project/nothing-pip/0.2.0/
 
-아직 커밋이 없습니다
-
-추적하지 않는 파일:
-  (커밋할 사항에 포함하려면 "git add <파일>..."을 사용하십시오)
-	.gitignore
-	README.md
-	pyproject.toml
-	src/
-	tests/
-
-커밋할 사항을 추가하지 않았지만 추적하지 않는 파일이 있습니다 (추적하려면 "git
-add"를 사용하십시오)
-$ git config user.name dmario24
-$ git config user.email data.mario24@gmail.com
-$ git add .
-$ git commit -m "python pdm init"
-[main (최상위-커밋) dcac4e7] python pdm init
- 5 files changed, 175 insertions(+)
- create mode 100644 .gitignore
- create mode 100644 README.md
- create mode 100644 pyproject.toml
- create mode 100644 src/example_package/__init__.py
- create mode 100644 tests/__init__.py
-$
 ```
+
+### Showing off and promoting
+- 이제 자랑의 시간입니다.
+- 알리고 싶은 사람에게 아래의 링크나 명령어를 전달하세요.
+- https://pypi.org/project/nothing_pip/
+```bash
+$ pip install nothing-pip
+```
+
+- 검색도 가능합니다.
+![image](https://github.com/edu-data-mario/nothing-pip/assets/134017660/8b5d19a5-0e8d-4a55-a59f-87cc0e7d9a30)
+
