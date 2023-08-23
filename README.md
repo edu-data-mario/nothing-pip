@@ -4,17 +4,21 @@
 - 아무것도 아닙니다.
 
 ### Start
-- 차차 파이썬 프로그램을 배포에 대한 [공식 문서](https://packaging.python.org/en/latest/tutorials/packaging-projects/)를 참고해 주세요.
-- 여기서는 [PDM](https://pdm.fming.dev/latest/#introduction) 을 사용합니다. [0.1.0 릴리즈 노트](https://github.com/edu-data-mario/nothing-pip/releases/tag/0.1.0) 에 정리되어 있습니다.
+- 차차 파이썬 프로그램 배포에 대한 [공식 문서](https://packaging.python.org/en/latest/tutorials/packaging-projects/)를 슬쩍 봐 주세요. 담에 필요하면 정독해 보세요.
+- 여기서는 [PDM](https://pdm.fming.dev/latest/#introduction) 을 사용합니다. 설치 로그는 [0.1.0 릴리즈 노트](https://github.com/edu-data-mario/nothing-pip/releases/tag/0.1.0) 에 정리되어 있습니다.
 ```bash
+# PDM 설치
 $ curl -sSL https://pdm.fming.dev/install-pdm.py | python3 -
+# 새로운 프로젝트 초기 구조 생성
 $ mkdir nothing-pip & cd nothing-pip
 $ pdm init
+# 새로운 프로젝트의 파이썬 가성환경 활성화 - 다른 파이썬 환경과 구별됩니다.
 $ source .venv/bin/activate
 ```
 
 ### Nothing
-- 한줄의 명령어로 누구나 사용 가능한 python 프로그램이 배포 되었습니다.
+- 그리고 아래와 같이 한줄의 명령어로 누구나 사용 가능한 python 프로그램이 배포 되었습니다.
+- id/password 는 [여기](https://pypi.org/account/register/)서 가입하세요.
 ```bash
 $ pdm publish
 
@@ -45,10 +49,53 @@ $ pip install nothing-pip
 ![검색도가능](https://github.com/edu-data-mario/nothing-pip/assets/134017660/8b5d19a5-0e8d-4a55-a59f-87cc0e7d9a30)
 
 # END
-![끄읏](https://i.ytimg.com/vi/Q2Z5gfjefh4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDtVt-7UDqL7G4gwhToXPLKyGR46A)
 
+```bash
+*｡*.。*∧,,,∧
+ ヾ(⌒(_=•ω•)_
+- 끝입니다. 끄읏 ㅋㅋㅋ
+- 뭔가 계속 해보고 싶다면 ...
+
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█░░░░░░░░▀█▄▀▄▀██████░▀█▄▀▄▀██████░
+░░░░░░░░░░░▀█▄█▄███▀░░░ ▀██▄█▄███▀░
+
+▒▒▒▒▒▒▒▒▒▒▒▒
+▒▒▒▒▓▒▒▓▒▒▒▒
+▒▒▒▒▓▒▒▓▒▒▒▒
+▒▒▒▒▒▒▒▒▒▒▒▒
+▒▓▒▒▒▒▒▒▒▒▓▒
+▒▒▓▓▓▓▓▓▓▓▒▒
+▒▒▒▒▒▒▒▒▒▒▒▒
+
+  ．．．．．/)─―ヘ
+  　　　━／　　　　＼
+  　 ／　　　　●　　●丶
+  　｜　　　　　　　▼　| (침묵)
+  　｜　　　　　　　亠ノ 　
+  　 U￣U￣￣￣U￣￣U
+
+.　　　　　　　　　  ∧＿∧ 三＝
+　　∧_∧ 　　　☆　  (˘ω˘　)三＝
+=≡( ･ω･) ∧_∧ ,;　_ノ　つ ﾉつ 三＝
+　 ⊂⊂ニ );)д｀((⊂ _ ＿⊂) 三＝
+-=≡ (_(_／⊂　Ｏ)
+　　　 　'/　 ヽ
+　　　 　∪￣＼)
+
+╭ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝╮
+             아래 도전을 진행해 보세요.
+╰ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ╯
+O °
+ᕱ ᕱ
+( ･ω･)
+/ つΦ . .. . ﹢ ⃰ ଂ ಇ
+
+```
 ----
 # Challenge - 1
+
+
 ### one tiny feature
 - [0.2.0 릴리즈](https://github.com/edu-data-mario/nothing-pip/releases/tag/0.2.0) 를 내려받아 해보세요.
 - [0.3.0 릴리즈](https://github.com/edu-data-mario/nothing-pip/releases/tag/0.3.0) 에 왼성 코드가 있습니다.
