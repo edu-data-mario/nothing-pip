@@ -1,6 +1,6 @@
 [project]
 name = "nothing-pip"
-version = "0.3.0"
+version = "0.3.1"
 description = "Let's share a program made with Python with mankind. It's nothing. It's easy."
 authors = [
     {name = "dmario24", email = "data.mario24@gmail.com"},
@@ -16,3 +16,7 @@ test = ["pytest", "pytest-cov"]
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
+
+[project.urls]
+"Homepage" = "https://github.com/edu-data-mario/nothing-pip"
+"Bug Tracker" = "https://github.com/edu-data-mario/nothing-pip/issues"
