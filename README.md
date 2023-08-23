@@ -98,7 +98,7 @@ O °
 
 ### one tiny feature
 - [0.2.0 릴리즈](https://github.com/edu-data-mario/nothing-pip/releases/tag/0.2.0) 를 내려받아 해보세요.
-- [0.3.0 릴리즈](https://github.com/edu-data-mario/nothing-pip/releases/tag/0.3.0) 에 왼성 코드가 있습니다.
+- [0.3.3 릴리즈](https://github.com/edu-data-mario/nothing-pip/releases/tag/0.3.3) 에 왼성 코드가 있습니다.
 - ping <-> pong 기능을 만들어 봅시다.
 - src/nothing_pip/ping.py 추가
 
