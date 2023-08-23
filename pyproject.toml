@@ -10,9 +10,9 @@ requires-python = ">=3.9"
 readme = "README.md"
 license = {text = "MIT"}
 
- [tool.pdm.dev-dependencies]
- test = ["pytest", "pytest-cov"]
+[tool.pdm.dev-dependencies]
+test = ["pytest", "pytest-cov"]
 
- [build-system]
- requires = ["pdm-backend"]
- build-backend = "pdm.backend"
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

@@ -42,26 +42,33 @@ https://pypi.org/project/nothing-pip/0.2.0/
 $ pip install nothing-pip
 ```
 
-- 검색도 가능합니다.
-![image](https://github.com/edu-data-mario/nothing-pip/assets/134017660/8b5d19a5-0e8d-4a55-a59f-87cc0e7d9a30)
+![검색도가능](https://github.com/edu-data-mario/nothing-pip/assets/134017660/8b5d19a5-0e8d-4a55-a59f-87cc0e7d9a30)
 
+# END
+![끄읏](https://i.ytimg.com/vi/Q2Z5gfjefh4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDtVt-7UDqL7G4gwhToXPLKyGR46A)
+
+----
+# Challenge - 1
 ### one tiny feature
-- [bard](bard.google.com)에 질문을 던지고 src/nothing_pip/__pycache__/earth.py 에 함수를 작성합니다.
-![image](https://github.com/edu-data-mario/nothing-pip/assets/134017660/948cc911-7b37-402d-9d8e-75112b195a4f)
+- [0.2.0 릴리즈](https://github.com/edu-data-mario/nothing-pip/releases/tag/0.2.0) 를 내려받아 해보세요.
+- [0.3.0 릴리즈](https://github.com/edu-data-mario/nothing-pip/releases/tag/0.3.0) 에 왼성 코드가 있습니다.
+- ping <-> pong 기능을 만들어 봅시다.
+- src/nothing_pip/ping.py 추가
 
 ### test
+- 만든 기능 확인을 위해 테스트를 만들어 봅니다.
+- tests/test_ping.py 추가
+- test 하는법 여러 종류 한번씩 해보세요. 뭐가 다른지 ~
  ```bash
  $ pytest
  $ pytest -q
  $ pytest -q tests/test_class.py
 
- $ pytest --cov=nin_nostradamus_pip tests/
- ---------- coverage: platform darwin, python 3.9.17-final-0 ----------
- Name                                  Stmts   Miss  Cover
- ---------------------------------------------------------
- src/nin_nostradamus_pip/__init__.py       0      0   100%
- src/nin_nostradamus_pip/ping.py           4      0   100%
- ---------------------------------------------------------
- TOTAL                                     4      0   100%
+ $ ---------- coverage: platform darwin, python 3.9.17-final-0 ----------
+Name                          Stmts   Miss  Cover
+-------------------------------------------------
+src/nothing_pip/__init__.py       0      0   100%
+src/nothing_pip/ping.py           4      0   100%
+-------------------------------------------------
+TOTAL                             4      0   100%
  ```
-
